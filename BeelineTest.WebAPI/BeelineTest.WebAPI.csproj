@@ -14,4 +14,8 @@
       <ProjectReference Include="..\BeelineTest.Data\BeelineTest.Data.csproj" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
 </Project>

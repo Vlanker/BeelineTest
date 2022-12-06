@@ -8,6 +8,13 @@ namespace BeelineTest.WebAPI.Controllers;
 [Produces("application/json")]
 public class ValuteController : ControllerBase
 {
+    
+    /// <summary>
+    /// Get Valute list.
+    /// </summary>
+    /// <param name="cancellationToken"></param>
+    /// <returns>List of available currencies.</returns>
+    /// <response code="200">Returns list of available currencies.</response>
     [HttpGet(Name = "GetNameValutes")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> Get([FromServices] DataService dataService, CancellationToken cancellationToken)
